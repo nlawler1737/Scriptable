@@ -1,15 +1,14 @@
+// Variables used by Scriptable.
+// These must be at the very top of the file. Do not edit.
+// icon-color: deep-blue; icon-glyph: sync-alt;
 
 let fm = FileManager.iCloud()
-log((await getCSS()).length)
+
 let selectedFile = await presentTable()
 
 if (!selectedFile) return
 
 let selectedDoc = fm.joinPath(fm.documentsDirectory(),selectedFile)
-log(selectedDoc)
-
-//return 
-//let selectedDoc = (await DocumentPicker.open(["com.netscape.javascript-source"]))[0]
 
 if (fm.fileExtension(selectedDoc)!="js") throw "Must Be '.js' Extension"
 
