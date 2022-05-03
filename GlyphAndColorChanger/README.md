@@ -1,4 +1,4 @@
-#INFO
+# INFO
 
 localIcons - Includes folder with Glyphs
 
