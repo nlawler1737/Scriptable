@@ -140,7 +140,7 @@ async function getCSS() {
   let p = fm.joinPath(fm.documentsDirectory(), "iconGlyphsCSS.txt")
 
   if (!fm.fileExists(p)) {
-    let req = new Request("https://github.com/nlawler1737/Scriptable/raw/main/iconCss.txt");
+    let req = new Request("https://github.com/nlawler1737/Scriptable/raw/main/iconGlyphCss.txt");
     let res = await req.loadString();
     fm.writeString(p, res);
   }
